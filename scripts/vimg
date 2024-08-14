@@ -14,7 +14,8 @@ function render_at_size {
   img_path="${3}"
 
   # animation is turned off as it does werid things with the terminal output
-  chafa --clear --size "${max_width}x${max_height}" "${img_path}"
+  // chafa --clear --size "${max_width}x${max_height}" "${img_path}"
+  kitty icat "${img_path}"
 }
 
 function draw_preview {
